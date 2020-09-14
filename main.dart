@@ -1,14 +1,27 @@
-void main() {
-  String mesaj = "Hello World!";
-  int dogumYili = 1998;
-  double oran = 1.15;
+void main(List<String> args) {
+  for (var i = 1; i <= 10; i++) {
+    print(i);
+  }
 
-  print(mesaj);
-  print(mesaj);
-  print(mesaj);
-  print(mesaj);
-  print(mesaj);
-  print(dogumYili);
-  print("Doğum yılı: " + dogumYili.toString());
-  print("Oran: " + oran.toString());
+  var products = ["Laptop", "Mouse", "Keyboard"];
+
+  for (var i = 0; i < products.length; i++) {
+    print(products[i]);
+  }
+
+  for (var product in products) {
+    print(product);
+  }
+
+  int sayi = 1;
+  while (sayi <= 10) {
+    print(sayi);
+    sayi++;
+  }
+
+  var sayi2 = 10;
+  do {
+    print("Sayı 2 = " + sayi2.toString());
+    sayi2++;
+  } while (sayi2 > 1000);
 }
